@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mark of the Beast: A Biblical Study</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .content-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin: 25px 0 15px 0;
+        }
+        
+        .scripture {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-left: 5px solid #e17055;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-style: italic;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .scripture-ref {
+            font-weight: bold;
+            color: #d63031;
+            display: block;
+            margin-bottom: 10px;
+            font-style: normal;
+        }
+        
+        .key-point {
+            background: linear-gradient(135deg, #a8e6cf 0%, #74b9ff 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #0984e3;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .warning {
+            background: linear-gradient(135deg, #ff7675 0%, #fd79a8 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #d63031;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .number-box {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 10px 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+        }
+        
+        #btn-en.active, #btn-bisaya.active {
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .content-card, header {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 The Mark of the Beast</h1>
+            <p class="subtitle">A Biblical Study from Daniel to Revelation</p>
+            <div style="margin-top: 20px;">
+                <button class="btn" onclick="switchLanguage('en')" id="btn-en">English</button>
+                <button class="btn" onclick="switchLanguage('bisaya')" id="btn-bisaya">Bisaya</button>
+            </div>
+        </header>
+
+        <!-- ENGLISH VERSION -->
+        <div class="lang-content lang-en">
+        <div class="content-card">
+            <h2>What is the Mark of the Beast?</h2>
+            
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 13:16-17 (KJV)</span>
+                "And he causeth all, both small and great, rich and poor, free and bond, to receive a mark in their right hand, or in their foreheads: And that no man might buy or sell, save he that had the mark, or the name of the beast, or the number of his name."
+            </div>
+
+            <div class="key-point">
+                <strong>Important:</strong> The mark of the beast is NOT a physical chip or tattoo. It is a <strong>symbolic mark</strong> representing allegiance to a religious-political system that opposes God's commandments.
+            </div>
+
+            <h3>Biblical Pattern: Forehead and Hand Are Symbolic</h3>
+            
+            <div class="scripture">
+                <span class="scripture-ref">Deuteronomy 6:6-8 (KJV)</span>
+                "And these words, which I command thee this day, shall be in thine heart... And thou shalt <strong>bind them for a sign upon thine hand, and they shall be as frontlets between thine eyes</strong>."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Deuteronomy 11:18 (KJV)</span>
+                "Therefore shall ye lay up these my words in your heart and in your soul, and <strong>bind them for a sign upon your hand, that they may be as frontlets between your eyes</strong>."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Exodus 13:9 (KJV)</span>
+                "And it shall be for <strong>a sign unto thee upon thine hand, and for a memorial between thine eyes</strong>, that the LORD's law may be in thy mouth: for with a strong hand hath the LORD brought thee out of Egypt."
+            </div>
+
+            <div class="key-point">
+                <strong>God uses "mark on hand/forehead" language symbolically throughout the Bible:</strong>
+                <ul>
+                    <li><strong>Forehead (between eyes):</strong> Thoughts, beliefs, mental acceptance</li>
+                    <li><strong>Hand:</strong> Actions, work, deeds</li>
+                    <li>This is clearly symbolic - God never commanded literal bands on foreheads!</li>
+                </ul>
+            </div>
+
+            <h3>God's Seal vs. Beast's Mark - Both on Forehead</h3>
+
+            <div class="scripture">
+                <span class="scripture-ref">Ezekiel 9:4 (KJV)</span>
+                "And the LORD said unto him, Go through the midst of the city, through the midst of Jerusalem, and <strong>set a mark upon the foreheads of the men that sigh and that cry for all the abominations</strong> that be done in the midst thereof."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 22:4 (KJV)</span>
+                "And they shall see his face; and <strong>his name shall be in their foreheads</strong>."
+            </div>
+
+            <p>In heaven, the saved have God's name on their foreheads - clearly this is spiritual, not physical!</p>
+
+            <h3>The Two Locations Explained:</h3>
+            <ul>
+                <li><strong>Forehead (Mind):</strong> Conscious choice and intellectual acceptance - believing the false system is correct</li>
+                <li><strong>Hand (Action):</strong> Outward compliance through actions - following the system even without full belief, due to pressure, fear, or economic necessity</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>The Mark is About Worship</h2>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 13:4, 8 (KJV)</span>
+                "And they <strong>worshipped the dragon</strong> which gave power unto the beast: and they <strong>worshipped the beast</strong>, saying, Who is like unto the beast? who is able to make war with him?... And all that dwell upon the earth <strong>shall worship him</strong>, whose names are not written in the book of life of the Lamb slain from the foundation of the world."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 13:15 (KJV)</span>
+                "And he had power to give life unto the image of the beast, that the image of the beast should both speak, and cause that as many as <strong>would not worship the image of the beast should be killed</strong>."
+            </div>
+
+            <div class="key-point">
+                <strong>The Core Issue:</strong> The mark of the beast is fundamentally about <strong>WORSHIP</strong>. Who will you worship - the Creator or the creature? Who will you obey - God's commandments or man's traditions?
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Matthew 15:9 (KJV)</span>
+                "But in vain they do worship me, <strong>teaching for doctrines the commandments of men</strong>."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Acts 5:29 (KJV)</span>
+                "Then Peter and the other apostles answered and said, <strong>We ought to obey God rather than men</strong>."
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Daniel's Prophecies: Identifying the Power</h2>
+
+            <h3>Daniel 7: The Little Horn</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Daniel 7:25 (KJV)</span>
+                "And he shall speak great words against the most High, and shall wear out the saints of the most High, and <strong>think to change times and laws</strong>: and they shall be given into his hand until a time and times and the dividing of time."
+            </div>
+
+            <div class="key-point">
+                <strong>Key Characteristics of This Power:</strong>
+                <ul>
+                    <li>Speaks against God (claims divine authority)</li>
+                    <li>Persecutes true believers</li>
+                    <li><strong>Attempts to change God's law</strong></li>
+                    <li>Rules for 1,260 years ("time, times, and half a time")</li>
+                </ul>
+            </div>
+
+            <h3>Daniel 8: Power That Exalts Itself</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Daniel 8:11-12 (KJV)</span>
+                "Yea, he magnified himself even to the prince of the host, and by him the daily sacrifice was taken away, and the place of the sanctuary was cast down. And an host was given him against the daily sacrifice by reason of transgression, and it cast down the truth to the ground; and it practised, and prospered."
+            </div>
+
+            <h3>Daniel 11: The Self-Exalting King</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Daniel 11:36 (KJV)</span>
+                "And the king shall do according to his will; and he shall exalt himself, and magnify himself above every god, and shall speak marvellous things against the God of gods, and shall prosper till the indignation be accomplished: for that that is determined shall be done."
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Revelation: The Same Power Revealed</h2>
+
+            <h3>Revelation 13: The Beast from the Sea</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 13:5-7 (KJV)</span>
+                "And there was given unto him a mouth speaking great things and blasphemies; and power was given unto him to continue <strong>forty and two months</strong>. And he opened his mouth in blasphemy against God, to blaspheme his name, and his tabernacle, and them that dwell in heaven. And it was given unto him to make war with the saints, and to overcome them: and power was given him over all kindreds, and tongues, and nations."
+            </div>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Daniel 7 Characteristics</th>
+                    <th>Revelation 13 Characteristics</th>
+                </tr>
+                <tr>
+                    <td>Speaks against God</td>
+                    <td>Speaks blasphemies against God ✓</td>
+                </tr>
+                <tr>
+                    <td>1,260 years of power</td>
+                    <td>42 months (1,260 days/years) ✓</td>
+                </tr>
+                <tr>
+                    <td>Persecutes the saints</td>
+                    <td>Makes war with the saints ✓</td>
+                </tr>
+                <tr>
+                    <td>Changes God's law</td>
+                    <td>Enforces false worship through the mark ✓</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content-card">
+            <h2>The Changed Law: God's Sabbath</h2>
+
+            <h3>Which Law Was Changed?</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Exodus 20:8-11 (KJV)</span>
+                "Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: But the <strong>seventh day</strong> is the sabbath of the LORD thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates: For in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it."
+            </div>
+
+            <div class="key-point">
+                <strong>Important Facts:</strong>
+                <ul>
+                    <li>The seventh day = <strong>Saturday</strong> (count from Sunday as the first day)</li>
+                    <li>This is the ONLY commandment about TIME that can be "changed"</li>
+                    <li>No verse in the Bible authorizes changing the Sabbath from Saturday to Sunday</li>
+                    <li>The change was made by human religious authority, not by God</li>
+                </ul>
+            </div>
+
+            <h3>God's Sabbath as His Sign/Mark</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Exodus 31:13 (KJV)</span>
+                "Speak thou also unto the children of Israel, saying, Verily my sabbaths ye shall keep: for <strong>it is a sign between me and you</strong> throughout your generations; that ye may know that I am the LORD that doth sanctify you."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Ezekiel 20:12, 20 (KJV)</span>
+                "Moreover also I gave them my sabbaths, to be <strong>a sign between me and them</strong>, that they might know that I am the LORD that sanctify them... And hallow my sabbaths; and <strong>they shall be a sign between me and you</strong>, that ye may know that I am the LORD your God."
+            </div>
+
+            <div class="key-point">
+                <strong>The Connection:</strong><br>
+                If God's true Sabbath (Saturday) is God's SIGN of authority and loyalty to Him, then the changed Sabbath (Sunday) represents human religious authority's mark.
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Understanding 666</h2>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 13:18 (KJV)</span>
+                "Here is wisdom. Let him that hath understanding count the number of the beast: for it is <strong>the number of a man</strong>; and his number is <strong>Six hundred threescore and six</strong>."
+            </div>
+
+            <h3>What Does 666 Mean?</h3>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <div class="number-box">6</div>
+                <div class="number-box">6</div>
+                <div class="number-box">6</div>
+            </div>
+
+            <h3>1. The Number of Man</h3>
+            <ul>
+                <li><strong>Number 6:</strong> Man was created on the 6th day (Genesis 1:27-31)</li>
+                <li><strong>Number 7:</strong> God's perfect number - the 7th day Sabbath, completion</li>
+                <li><strong>666:</strong> Triple 6 = Complete human system pretending to be divine, but always falling short (never reaching 7)</li>
+            </ul>
+
+            <h3>2. Human Authority Claiming Divine Power</h3>
+            <div class="key-point">
+                666 represents a <strong>human system</strong> that:
+                <ul>
+                    <li>Claims divine authority</li>
+                    <li>Sets itself up as God</li>
+                    <li>Changes God's eternal law</li>
+                    <li>Demands worship and obedience due only to God</li>
+                </ul>
+            </div>
+
+            <h3>3. Blasphemy Defined</h3>
+            <div class="scripture">
+                <span class="scripture-ref">John 10:33 (KJV)</span>
+                "The Jews answered him, saying, For a good work we stone thee not; but for blasphemy; and because that thou, being a man, makest thyself God."
+            </div>
+
+            <p>Blasphemy = A human claiming to be God or claiming God's prerogatives (like changing His eternal law)</p>
+
+            <h3>4. Counterfeit Trinity</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>True Trinity</th>
+                    <th>Counterfeit (666)</th>
+                </tr>
+                <tr>
+                    <td>Father God</td>
+                    <td>Dragon (Satan)</td>
+                </tr>
+                <tr>
+                    <td>Jesus Christ</td>
+                    <td>Beast from the Sea</td>
+                </tr>
+                <tr>
+                    <td>Holy Spirit</td>
+                    <td>Beast from the Earth (False Prophet)</td>
+                </tr>
+            </table>
+
+            <h3>5. Who Specifically is 666?</h3>
+            <div class="key-point">
+                <strong>Historical Identification:</strong><br>
+                Throughout history, Bible scholars have identified this power as the <strong>Papacy/Roman Catholic Church system</strong> based on:
+                
+                <ul>
+                    <li><strong>Gematria (Letter Values):</strong> The Latin title "VICARIUS FILII DEI" (Vicar of the Son of God) - when Roman numerals are added: V(5) + I(1) + C(100) + A(0) + R(0) + I(1) + U/V(5) + S(0) + F(0) + I(1) + L(50) + I(1) + I(1) + D(500) + E(0) + I(1) = <strong>666</strong></li>
+                    <li><strong>Claims Divine Authority:</strong> The Pope claims to be "Vicar of Christ" - representative of God on earth</li>
+                    <li><strong>Changed God's Law:</strong> Officially changed the Sabbath from Saturday to Sunday</li>
+                    <li><strong>Admits This Authority:</strong> Catholic sources state: "Sunday is our mark of authority... the church is above the Bible"</li>
+                </ul>
+            </div>
+
+            <div class="warning">
+                <strong>Important Clarification:</strong><br>
+                This is about the <strong>SYSTEM and its teachings</strong>, not about individual Catholics who are sincere believers. Many Catholics love Jesus and don't understand these prophecies. God calls honest people everywhere to study His Word.
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Understanding 777: God's Perfect Number</h2>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <div class="number-box" style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">7</div>
+                <div class="number-box" style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">7</div>
+                <div class="number-box" style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">7</div>
+            </div>
+
+            <h3>Why is 7 God's Number?</h3>
+            
+            <div class="scripture">
+                <span class="scripture-ref">Genesis 2:2-3 (KJV)</span>
+                "And on the <strong>seventh day</strong> God ended his work which he had made; and he rested on the seventh day from all his work which he had made. And God blessed the seventh day, and sanctified it: because that in it he had rested from all his work which God created and made."
+            </div>
+
+            <div class="key-point">
+                <strong>Number 7 in the Bible represents:</strong>
+                <ul>
+                    <li><strong>Completion & Perfection:</strong> God's work of creation completed in 7 days</li>
+                    <li><strong>Divine Rest:</strong> The 7th day Sabbath - God's holy day</li>
+                    <li><strong>Covenant:</strong> God's relationship with His people</li>
+                    <li><strong>Holiness:</strong> Set apart by God Himself</li>
+                </ul>
+            </div>
+
+            <h3>Biblical Examples of 7:</h3>
+            <ul>
+                <li><strong>7 days of Creation</strong> (Genesis 1-2)</li>
+                <li><strong>7th day Sabbath</strong> - God's seal/sign (Exodus 20:8-11)</li>
+                <li><strong>7 churches</strong> in Revelation (Revelation 2-3)</li>
+                <li><strong>7 seals, 7 trumpets, 7 bowls</strong> in Revelation</li>
+                <li><strong>7 spirits of God</strong> (Revelation 4:5)</li>
+                <li><strong>Forgive 70 times 7</strong> (Matthew 18:22) - perfect forgiveness</li>
+            </ul>
+
+            <h3>The Contrast: 666 vs 777</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>666 - Human System</th>
+                    <th>777 - Divine Perfection</th>
+                </tr>
+                <tr>
+                    <td>Man created on 6th day</td>
+                    <td>God rested on 7th day</td>
+                </tr>
+                <tr>
+                    <td>Human imperfection (always falls short)</td>
+                    <td>Divine completion and perfection</td>
+                </tr>
+                <tr>
+                    <td>Human authority claiming to be divine</td>
+                    <td>True divine authority</td>
+                </tr>
+                <tr>
+                    <td>Changed Sabbath (Sunday - 1st day)</td>
+                    <td>True Sabbath (Saturday - 7th day)</td>
+                </tr>
+                <tr>
+                    <td>Mark of the beast on forehead/hand</td>
+                    <td>God's name/seal on forehead</td>
+                </tr>
+                <tr>
+                    <td>Counterfeit worship system</td>
+                    <td>True worship of the Creator</td>
+                </tr>
+            </table>
+
+            <div class="key-point">
+                <strong>The Ultimate Choice:</strong><br>
+                666 = Following human tradition and changed laws (Sunday observance)<br>
+                777 = Following God's perfect, unchanged law (7th day Sabbath observance)
+            </div>
+        </div>
+        </div>
+
+        <!-- BISAYA VERSION -->
+        <div class="lang-content lang-bisaya">
+        <div class="content-card">
+            <h2>Unsa ang Mark of the Beast?</h2>
+
+            <div class="key-point">
+                <strong>The Ultimate Choice:</strong><br>
+                666 = Following human tradition and changed laws (Sunday observance)<br>
+                777 = Following God's perfect, unchanged law (7th day Sabbath observance)
+            </div>
+        </div>
+        </div>
+
+        <!-- BISAYA VERSION -->
+        <div class="lang-content lang-bisaya">
+        <div class="content-card">
+            <h2>Unsa ang Mark of the Beast?</h2>
+            
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 13:16-17</span>
+                "Gipugos niya ang tanan, gagmay ug dagko, adunahan ug pobre, gawasnon ug ulipon, nga dawaton ang usa ka timaan sa ilang tuong kamot o sa ilang agtang, ug walay makapalit o makabaligya gawas kaniya nga adunay timaan."
+            </div>
+
+            <div class="key-point">
+                <strong>Importante:</strong> Ang mark of the beast DILI physical chip o tattoo. Kini usa ka <strong>symbolic mark</strong> nga nagrepresentar sa pagsunod sa usa ka relihiyoso-politikal nga sistema nga nakasukol sa mga mando sa Dios.
+            </div>
+
+            <h3>Biblical Pattern: Ang Agtang ug Kamot Symbolic</h3>
+            
+            <div class="scripture">
+                <span class="scripture-ref">Deuteronomy 6:6-8</span>
+                "Ug kining mga pulonga... <strong>ihigot mo ingon nga mga ilhanan sa imong kamot, ug mahimong mga tabu sa taliwala sa imong mga mata</strong>."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Deuteronomy 11:18</span>
+                "Busa ibutang ninyo kining akong mga pulong sa inyong kasingkasing ug sa inyong kalag, ug <strong>ihigot ninyo kini ingon nga ilhanan sa inyong kamot, ug mahimo kining mga tabu sa taliwala sa inyong mga mata</strong>."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Exodus 13:9</span>
+                "Ug kini mahimong <strong>usa ka ilhanan kanimo sa imong kamot, ug usa ka handumanan sa taliwala sa imong mga mata</strong>, aron ang kasugoan sa Ginoo mahimong diha sa imong baba."
+            </div>
+
+            <div class="key-point">
+                <strong>Gigamit sa Dios ang "marka sa kamot/agtang" nga pinulongan nga simboliko sa tibuok Bibliya:</strong>
+                <ul>
+                    <li><strong>Agtang (taliwala sa mga mata):</strong> Hunahuna, pagtuo, mental acceptance</li>
+                    <li><strong>Kamot:</strong> Aksyon, trabaho, mga buhat</li>
+                    <li>Kini klaro nga simboliko - Wala sukad gimando sa Dios ang literal nga mga higot sa agtang!</li>
+                </ul>
+            </div>
+
+            <h3>Ang Seal sa Dios vs. Marka sa Mananap - Duha sa Agtang</h3>
+
+            <div class="scripture">
+                <span class="scripture-ref">Ezekiel 9:4</span>
+                "Ug miingon ang Ginoo kaniya, Latas sa taliwala sa siyudad, sa taliwala sa Jerusalem, ug <strong>butangi ug marka ang mga agtang sa mga tawo nga nagapanghupaw ug nagahilak</strong> tungod sa tanang mga dulumtanan nga gihimo didto."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 22:4</span>
+                "Ug makita nila ang iyang nawong; ug <strong>ang iyang ngalan anaa sa ilang mga agtang</strong>."
+            </div>
+
+            <p>Sa langit, ang mga naluwas adunay ngalan sa Dios sa ilang mga agtang - klaro nga kini espirituhanon, dili pisikal!</p>
+
+            <h3>Ang Duha ka Lokasyon Gipasabot:</h3>
+            <ul>
+                <li><strong>Agtang (Hunahuna):</strong> Conscious choice ug intellectual acceptance - nagtuo nga ang false system mao ang tama</li>
+                <li><strong>Kamot (Aksyon):</strong> Outward compliance pinaagi sa mga aksyon - pagsunod sa sistema bisan wala motuo, tungod sa presyur, kahadlok, o economic necessity</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>Ang Marka Bahin sa Pagsimba</h2>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 13:4, 8</span>
+                "Ug <strong>gisimba nila ang dragon</strong> nga naghatag ug gahum sa mananap: ug <strong>gisimba nila ang mananap</strong>, nga nagaingon, Kinsa ang sama sa mananap? kinsa ang makahimo sa pagpakiggubat kaniya?... Ug ang tanan nga nagapuyo sa yuta <strong>magasimba kaniya</strong>, sila nga ang ilang mga ngalan wala mahisulat sa basahon sa kinabuhi."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 13:15</span>
+                "Ug gihatagan siya ug gahum sa paghatag ug kinabuhi sa larawan sa mananap, aron ang larawan sa mananap makasulti, ug makapugos nga kadtong <strong>dili mosimba sa larawan sa mananap pagapatyon</strong>."
+            </div>
+
+            <div class="key-point">
+                <strong>Ang Kinauyokan nga Isyu:</strong> Ang mark of the beast sa fundamental bahin sa <strong>PAGSIMBA</strong>. Kinsa imong simbahon - ang Magbubuhat o ang binuhat? Kinsa imong sundon - ang mga sugo sa Dios o ang mga tradisyon sa tawo?
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Matthew 15:9</span>
+                "Apan sa walay pulos gisimba nila ako, <strong>nga nagatudlo ingon nga mga doctrina sa mga sugo sa mga tawo</strong>."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Acts 5:29</span>
+                "Apan si Pedro ug ang uban nga mga apostoles mitubag ug miingon, <strong>Angay gayud nga motuman kami sa Dios kay sa mga tawo</strong>."
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Ang Mga Propesiya ni Daniel: Pag-ila sa Gahum</h2>
+
+            <h3>Daniel 7: Ang Gamay nga Sungay</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Daniel 7:25</span>
+                "Mosulti siya batok sa Labing Halangdon, mag-abuso sa iyang mga balaan, ug <strong>mosulay sa pag-usab sa mga panahon ug sa balaod</strong>. Ang mga balaan igahatag sa iyang kamot sulod sa usa ka panahon, mga panahon, ug katunga sa panahon."
+            </div>
+
+            <div class="key-point">
+                <strong>Mga Kinaiya niining Gahum:</strong>
+                <ul>
+                    <li>Mosulti batok sa Dios (nag-claim ug divine authority)</li>
+                    <li>Mag-persecute sa tinuod nga mga believers</li>
+                    <li><strong>Mosulay sa pag-usab sa balaod sa Dios</strong></li>
+                    <li>Maghari ug 1,260 ka tuig ("panahon, mga panahon, ug katunga sa panahon")</li>
+                </ul>
+            </div>
+
+            <h3>Daniel 8: Gahum nga Nagpadaku sa Iyang Kaugalingon</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Daniel 8:11-12</span>
+                "Nagpadaku kini batok sa Prinsipe sa panon, ug gikan kaniya gikuha ang inadlaw nga halad, ug ang dapit sa iyang balaang puloy-anan gipukan."
+            </div>
+
+            <h3>Daniel 11: Ang Hari nga Nagpadaku sa Iyang Kaugalingon</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Daniel 11:36</span>
+                "Ang hari magbuhat sumala sa iyang kabubut-on: magpadaku ug magpahilabi siya sa iyang kaugalingon labaw sa tanang dios, mosulti ug mga katingalahang butang batok sa Dios sa mga dios."
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Apokalipsis: Pareho nga Gahum Gipadayag</h2>
+
+            <h3>Revelation 13: Ang Mananap gikan sa Dagat</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 13:5-7</span>
+                "Gihatagan siya ug baba nga makasulti ug dagku ug mga pagpasipala, ug gihatagan siya ug pagbulot-an sa paglihok sulod sa <strong>kap-atan ug duha ka bulan</strong> [1,260 ka adlaw = 1,260 ka propetikong tuig]. Giablihan niya ang iyang baba sa pagpasipala batok sa Dios... Gihatagan siya ug gahum sa pagpakiggubat batok sa mga balaan ug sa pagbuntog kanila."
+            </div>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Mga Kinaiya sa Daniel 7</th>
+                    <th>Mga Kinaiya sa Revelation 13</th>
+                </tr>
+                <tr>
+                    <td>Mosulti batok sa Dios</td>
+                    <td>Mosulti ug mga pasipala batok sa Dios ✓</td>
+                </tr>
+                <tr>
+                    <td>1,260 ka tuig nga gahum</td>
+                    <td>42 ka bulan (1,260 ka adlaw/tuig) ✓</td>
+                </tr>
+                <tr>
+                    <td>Mag-persecute sa mga balaan</td>
+                    <td>Makiggubat sa mga balaan ✓</td>
+                </tr>
+                <tr>
+                    <td>Mag-usab sa balaod sa Dios</td>
+                    <td>Magpugos ug false worship pinaagi sa mark ✓</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content-card">
+            <h2>Ang Giusab nga Balaod: Ang Sabbath sa Dios</h2>
+
+            <h3>Unsang Balaod ang Giusab?</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Exodo 20:8-11</span>
+                "Hinumdomi ang adlaw nga Igpapahulay, aron balaanon mo kini. Unom ka adlaw magbuhat ka ug tanang imong buluhaton, apan ang <strong>ikapito ka adlaw</strong> igpapahulay alang sa Ginoo nga imong Dios... Kay sa unom ka adlaw gibuhat ni Jehova ang langit ug ang yuta, ang dagat ug ang tanan nga anaa kanila, ug mipahulay sa ikapito ka adlaw."
+            </div>
+
+            <div class="key-point">
+                <strong>Importante nga mga Kamatuoran:</strong>
+                <ul>
+                    <li>Ang ikapito ka adlaw = <strong>Sabado</strong> (count gikan sa Domingo ingon nga first day)</li>
+                    <li>Kini ang BUGTONG sugo bahin sa PANAHON nga pwedeng "mausab"</li>
+                    <li>Walay verse sa Bibliya nga nag-authorize sa pag-usab sa Sabbath gikan sa Sabado ngadto sa Domingo</li>
+                    <li>Ang kausaban gihimo sa human religious authority, dili sa Dios</li>
+                </ul>
+            </div>
+
+            <h3>Ang Sabbath sa Dios ingon nga Iyang Ilhanan/Marka</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Exodo 31:13</span>
+                "Ang akong mga igpapahulay tuman-an ninyo, kay <strong>kini mao ang ilhanan tali kanako ug kaninyo</strong> ngadto sa inyong mga kaliwatan, aron masayran nga Ako mao si Jehova nga nagabalaan kaninyo."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Ezequiel 20:12, 20</span>
+                "Gihatag ko usab kanila ang akong mga igpapahulay, nga <strong>mahimong usa ka ilhanan tali kanako ug kanila</strong>, aron masayran nila nga Ako mao si Jehova nga nagabalaan kanila... Balaana ang akong mga igpapahulay, ug <strong>sila mahimong usa ka ilhanan tali kanako ug kaninyo</strong>."
+            </div>
+
+            <div class="key-point">
+                <strong>Ang Koneksyon:</strong><br>
+                Kung ang tinuod nga Sabbath sa Dios (Sabado) mao ang ILHANAN sa Dios sa awtoridad ug pagkamaunongon Kaniya, nan ang giusab nga Sabbath (Domingo) nagrepresentar sa marka sa human religious authority.
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Pagsabot sa 666</h2>
+
+            <div class="scripture">
+                <span class="scripture-ref">Apokalipsis 13:18</span>
+                "Ania ang kaalam. Ang adunay salabutan, paaisipa ang numero sa mapintas nga mananap, kay kini <strong>numero sa usa ka tawo</strong>: Ang iyang numero <strong>666</strong>."
+            </div>
+
+            <h3>Unsa ang Buot Ipasabot sa 666?</h3>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <div class="number-box">6</div>
+                <div class="number-box">6</div>
+                <div class="number-box">6</div>
+            </div>
+
+            <h3>1. Ang Numero sa Tawo</h3>
+            <ul>
+                <li><strong>Numero 6:</strong> Ang tawo gihimo sa ika-6 nga adlaw (Genesis 1:27-31)</li>
+                <li><strong>Numero 7:</strong> Ang perpekto nga numero sa Dios - ang ika-7 nga adlaw nga Sabbath, pagkompleto</li>
+                <li><strong>666:</strong> Triple 6 = Kompleto nga human system nga nagpanggap nga divine, apan kanunay nga kulang (wala makaabot sa 7)</li>
+            </ul>
+
+            <h3>2. Human Authority nga Nag-claim ug Divine Power</h3>
+            <div class="key-point">
+                Ang 666 nagrepresentar sa usa ka <strong>human system</strong> nga:
+                <ul>
+                    <li>Nag-claim ug divine authority</li>
+                    <li>Nagbutang sa iyang kaugalingon ingon nga Dios</li>
+                    <li>Nag-usab sa eternal law sa Dios</li>
+                    <li>Nangayo ug pagsimba ug pagtoo nga angay lang sa Dios</li>
+                </ul>
+            </div>
+
+            <h3>3. Paghulagway sa Pasipala</h3>
+            <div class="scripture">
+                <span class="scripture-ref">John 10:33</span>
+                "Tungod sa maayong buhat dili kami managbato kanimo, kondili tungod sa pasipala, ug tungod kay ikaw, nga tawo, nagapahimo sa imong kaugalingon nga Dios."
+            </div>
+
+            <p>Pasipala = Usa ka tawo nga nag-claim nga siya Dios o nag-claim sa mga pribilehiyo sa Dios (sama sa pag-usab sa Iyang eternal law)</p>
+
+            <h3>4. Counterfeit Trinity</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Tinuod nga Trinidad</th>
+                    <th>Counterfeit (666)</th>
+                </tr>
+                <tr>
+                    <td>Dios Amahan</td>
+                    <td>Dragon (Satanas)</td>
+                </tr>
+                <tr>
+                    <td>Jesu-Cristo</td>
+                    <td>Mananap gikan sa Dagat</td>
+                </tr>
+                <tr>
+                    <td>Espiritu Santo</td>
+                    <td>Mananap gikan sa Yuta (Bakak nga Propeta)</td>
+                </tr>
+            </table>
+
+            <h3>5. Kinsa Specifically ang 666?</h3>
+            <div class="key-point">
+                <strong>Historical Identification:</strong><br>
+                Sa tibuok kasaysayan, ang mga eskolar sa Bibliya nag-ila niining gahuma ingon nga <strong>Papacy/Roman Catholic Church system</strong> base sa:
+                
+                <ul>
+                    <li><strong>Gematria (Letter Values):</strong> Ang Latin title nga "VICARIUS FILII DEI" (Vicar of the Son of God) - kung i-add ang Roman numerals: V(5) + I(1) + C(100) + A(0) + R(0) + I(1) + U/V(5) + S(0) + F(0) + I(1) + L(50) + I(1) + I(1) + D(500) + E(0) + I(1) = <strong>666</strong></li>
+                    <li><strong>Nag-claim ug Divine Authority:</strong> Ang Papa nag-claim nga siya "Vicar of Christ" - representative sa Dios sa yuta</li>
+                    <li><strong>Nag-usab sa Balaod sa Dios:</strong> Opisyal nga giusab ang Sabbath gikan sa Sabado ngadto sa Domingo</li>
+                    <li><strong>Nag-admit niining Awtoridad:</strong> Ang Catholic sources nagsulti: "Ang Sunday mao ang among marka sa awtoridad... ang simbahan mas taas pa sa Bibliya"</li>
+                </ul>
+            </div>
+
+            <div class="warning">
+                <strong>Importanteng Katin-awan:</strong><br>
+                Kini bahin sa <strong>SISTEMA ug sa iyang mga tudlo</strong>, dili bahin sa individual nga mga Catholics nga sincere nga mga believers. Daghan nga Catholics nga nahigugma kang Jesus ug wala makasabot niining mga propesiya. Ang Dios nagtawag sa matinud-anong mga tawo bisan asa aron magtuon sa Iyang Pulong.
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Pagsabot sa 777: Ang Perpektong Numero sa Dios</h2>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <div class="number-box" style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">7</div>
+                <div class="number-box" style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">7</div>
+                <div class="number-box" style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">7</div>
+            </div>
+
+            <h3>Ngano nga 7 ang Numero sa Dios?</h3>
+            
+            <div class="scripture">
+                <span class="scripture-ref">Genesis 2:2-3</span>
+                "Ug sa <strong>ikapitong adlaw</strong> gihuman sa Dios ang iyang buhat nga iyang gihimo, ug mipahulay siya sa ikapitong adlaw gikan sa tanan niyang gihimo. Ug gipanalanginan sa Dios ang ikapitong adlaw ug gibalaaan kini."
+            </div>
+
+            <div class="key-point">
+                <strong>Ang Numero 7 sa Bibliya nagrepresentar sa:</strong>
+                <ul>
+                    <li><strong>Pagkompleto ug Kahamtangan:</strong> Ang buhat sa paglalang sa Dios nahuman sa 7 ka adlaw</li>
+                    <li><strong>Divine Rest:</strong> Ang ika-7 nga adlaw nga Sabbath - ang balaan nga adlaw sa Dios</li>
+                    <li><strong>Pakigsaad:</strong> Ang relasyon sa Dios sa Iyang mga katawhan</li>
+                    <li><strong>Pagkabalaan:</strong> Gibulag sa Dios mismo</li>
+                </ul>
+            </div>
+
+            <h3>Mga Pananglitan sa Bibliya sa 7:</h3>
+            <ul>
+                <li><strong>7 ka adlaw sa Paglalang</strong> (Genesis 1-2)</li>
+                <li><strong>Ika-7 nga adlaw nga Sabbath</strong> - Ang seal/ilhanan sa Dios (Exodo 20:8-11)</li>
+                <li><strong>7 ka simbahan</strong> sa Apokalipsis (Apokalipsis 2-3)</li>
+                <li><strong>7 ka selyo, 7 ka trumpeta, 7 ka panaksan</strong> sa Apokalipsis</li>
+                <li><strong>7 ka espiritu sa Dios</strong> (Apokalipsis 4:5)</li>
+                <li><strong>Pasayloa 70 ka pilo sa 7</strong> (Mateo 18:22) - perpektong pagpasaylo</li>
+            </ul>
+
+            <h3>Ang Kalainan: 666 vs 777</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>666 - Human System</th>
+                    <th>777 - Divine Perfection</th>
+                </tr>
+                <tr>
+                    <td>Tawo gihimo sa ika-6 nga adlaw</td>
+                    <td>Dios mipahulay sa ika-7 nga adlaw</td>
+                </tr>
+                <tr>
+                    <td>Human imperfection (kanunay nga kulang)</td>
+                    <td>Divine completion ug kahamtangan</td>
+                </tr>
+                <tr>
+                    <td>Human authority nga nag-claim nga divine</td>
+                    <td>Tinuod nga divine authority</td>
+                </tr>
+                <tr>
+                    <td>Giusab nga Sabbath (Domingo - ika-1 nga adlaw)</td>
+                    <td>Tinuod nga Sabbath (Sabado - ika-7 nga adlaw)</td>
+                </tr>
+                <tr>
+                    <td>Marka sa mananap sa agtang/kamot</td>
+                    <td>Ngalan/seal sa Dios sa agtang</td>
+                </tr>
+                <tr>
+                    <td>Counterfeit worship system</td>
+                    <td>Tinuod nga pagsimba sa Magbubuhat</td>
+                </tr>
+            </table>
+
+            <div class="key-point">
+                <strong>Ang Ultimate nga Pagpili:</strong><br>
+                666 = Pagsunod sa human tradition ug giusab nga mga balaod (pagsaulog sa Domingo)<br>
+                777 = Pagsunod sa perpekto, wala mausab nga balaod sa Dios (pagsaulog sa ika-7 nga adlaw nga Sabbath)
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Ang Katapusang Pagsulay: Duha ka Marka</h2>
+
+            <h3>Marka sa Mananap (666)</h3>
+            <div class="warning">
+                <strong>Apokalipsis 13:16-17:</strong> Economic control - dili makapalit o makabaligya kung wala'y marka
+                <br><br>
+                <strong>Unsa kini nagrepresentar:</strong>
+                <ul>
+                    <li>Pagsunod sa human religious-political authority</li>
+                    <li>Pagdawat sa giusab nga balaod (pagsimba sa Domingo) imbes sa mando sa Dios</li>
+                    <li>Pagpili sa convenience, ekonomiya, pagkabuhi imbes sa pagtuman sa Dios</li>
+                </ul>
+            </div>
+
+            <h3>Ang Seal sa Dios</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 7:2-3</span>
+                "Ayaw pagsakita ang yuta, ang dagat, o ang mga kahoy hangtud nga <strong>patikan nato sa ilang mga agtang ang mga alagad sa atong Dios</strong>."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 14:1</span>
+                "Unya tan-awa, nakita ko ang Cordero nga nagatindog sa bukid sa Sion, ug uban kaniya usa ka gatus kap-atan ug upat ka libo, nga <strong>may ngalan niya ug ang ngalan sa iyang Amahan nga sinulat sa ilang mga agtang</strong>."
+            </div>
+
+            <div class="key-point">
+                <strong>Ang Seal sa Dios nagrepresentar sa:</strong>
+                <ul>
+                    <li>Pagsunod sa Dios lamang</li>
+                    <li>Pagtuman sa TANAN nga mga sugo sa Dios, lakip ang wala mausab nga Sabbath</li>
+                    <li>Pagbaton sa ngalan/kinaiya sa Dios nga gisulat sa hunahuna ug kasingkasing</li>
+                </ul>
+            </div>
+
+            <h3>Ang Pagpili</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 14:9-12</span>
+                "Kon may mosimba sa mananap ug sa iyang larawan, ug modawat sa timaan sa iyang agtang o sa iyang kamot, siya usab magainom sa bino sa kaligutgut sa Dios... Ania ang pailub sa mga balaan; <strong>ania kanila nga nagatuman sa mga sugo sa Dios ug sa pagtuo kang Jesus</strong>."
+            </div>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Marka sa Mananap</th>
+                    <th>Seal sa Dios</th>
+                </tr>
+                <tr>
+                    <td>Human authority</td>
+                    <td>Divine authority</td>
+                </tr>
+                <tr>
+                    <td>Giusab nga balaod (Domingo)</td>
+                    <td>Orihinal nga balaod (Sabbath)</td>
+                </tr>
+                <tr>
+                    <td>Numero 666</td>
+                    <td>Ngalan sa Dios</td>
+                </tr>
+                <tr>
+                    <td>Makapalit ug makabaligya</td>
+                    <td>Economic persecution</td>
+                </tr>
+                <tr>
+                    <td>Eternal destruction</td>
+                    <td>Eternal life</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content-card">
+            <h2>Ang Katapusang Tawag</h2>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 18:4</span>
+                "Gawas kamo gikan kaniya, mga katawhan ko, aron dili kamo makaambit sa iyang mga sala, ug aron dili kamo makadawat sa iyang mga kasakit."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 14:7</span>
+                "Kahadloki ang Dios ug hatagi siya ug himaya, kay miabut na ang takna sa iyang paghukom; ug <strong>simbaha siya nga naghimo sa langit ug sa yuta, sa dagat ug sa mga tuburan sa tubig</strong>."
+            </div>
+
+            <p style="font-size: 1.1em; margin: 20px 0;">
+                Mamatikdi nga kini nag-echo sa Sabbath commandment (Exodus 20:11): "Kay sa unom ka adlaw gibuhat ni Jehova ang langit ug ang yuta, ang dagat ug ang tanan nga anaa kanila."
+            </p>
+
+            <div class="key-point">
+                <strong>Ang Kinauyokan nga Isyu:</strong><br>
+                Ang mark of the beast dili bahin sa teknolohiya o pisikal nga mga marka. Kini bahin sa <strong>PAGSIMBA</strong> ug <strong>PAGSUNOD</strong>.
+                <br><br>
+                <strong>Ang Pangutana:</strong> Mosunod ka ba sa human tradition ug giusab nga mga balaod, o magpabilin ka nga matinud-anon sa wala mausab nga mga sugo sa Dios?
+            </div>
+
+            <div class="warning">
+                <strong>Kini dili bahin sa pagdumot sa bisan unsang grupo sa mga tawo.</strong> Daghan kaayong sincere, mahigugmaon nga mga Christians anaa sa lainlaing mga simbahan ug wala pa makasabot niining mga propesiya. Ang Dios nagtawag sa tanang matinud-anong mga kasingkasing sa pagtuon sa Iyang Pulong ug pagsunod sa kamatuoran bisan asa kini modala.
+            </div>
+        </div>
+        </div>
+
+            <h3>Mark of the Beast (666)</h3>
+            <div class="warning">
+                <strong>Revelation 13:16-17 (KJV):</strong> Economic control - cannot buy or sell without the mark
+                <br><br>
+                <strong>What it represents:</strong>
+                <ul>
+                    <li>Allegiance to human religious-political authority</li>
+                    <li>Accepting changed law (Sunday worship) over God's command</li>
+                    <li>Choosing convenience, economy, survival over obedience to God</li>
+                </ul>
+            </div>
+
+            <h3>God's Seal</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 7:2-3 (KJV)</span>
+                "And I saw another angel ascending from the east, having the seal of the living God: and he cried with a loud voice to the four angels, to whom it was given to hurt the earth and the sea, Saying, Hurt not the earth, neither the sea, nor the trees, till <strong>we have sealed the servants of our God in their foreheads</strong>."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 14:1 (KJV)</span>
+                "And I looked, and, lo, a Lamb stood on the mount Sion, and with him an hundred forty and four thousand, <strong>having his Father's name written in their foreheads</strong>."
+            </div>
+
+            <div class="key-point">
+                <strong>God's Seal represents:</strong>
+                <ul>
+                    <li>Loyalty to God alone</li>
+                    <li>Keeping ALL of God's commandments, including the unchanged Sabbath</li>
+                    <li>Having God's name/character written in the mind and heart</li>
+                </ul>
+            </div>
+
+            <h3>The Choice</h3>
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 14:9-12 (KJV)</span>
+                "And the third angel followed them, saying with a loud voice, If any man worship the beast and his image, and receive his mark in his forehead, or in his hand, The same shall drink of the wine of the wrath of God, which is poured out without mixture into the cup of his indignation... Here is the patience of the saints: <strong>here are they that keep the commandments of God, and the faith of Jesus</strong>."
+            </div>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Mark of the Beast</th>
+                    <th>God's Seal</th>
+                </tr>
+                <tr>
+                    <td>Human authority</td>
+                    <td>Divine authority</td>
+                </tr>
+                <tr>
+                    <td>Changed law (Sunday)</td>
+                    <td>Original law (Sabbath)</td>
+                </tr>
+                <tr>
+                    <td>Number 666</td>
+                    <td>God's name</td>
+                </tr>
+                <tr>
+                    <td>Can buy and sell</td>
+                    <td>Economic persecution</td>
+                </tr>
+                <tr>
+                    <td>Eternal destruction</td>
+                    <td>Eternal life</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content-card">
+            <h2>The Final Appeal</h2>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 18:4 (KJV)</span>
+                "And I heard another voice from heaven, saying, Come out of her, my people, that ye be not partakers of her sins, and that ye receive not of her plagues."
+            </div>
+
+            <div class="scripture">
+                <span class="scripture-ref">Revelation 14:7 (KJV)</span>
+                "Saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and <strong>worship him that made heaven, and earth, and the sea, and the fountains of waters</strong>."
+            </div>
+
+            <p style="font-size: 1.1em; margin: 20px 0;">
+                Notice this echoes the Sabbath commandment (Exodus 20:11 KJV): "For in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day."
+            </p>
+
+            <div class="key-point">
+                <strong>The Core Issue:</strong><br>
+                The mark of the beast isn't about technology or physical marks. It's about <strong>WORSHIP</strong> and <strong>OBEDIENCE</strong>.
+                <br><br>
+                <strong>The Question:</strong> Will you follow human tradition and changed laws, or will you remain faithful to God's unchanged commandments?
+            </div>
+
+            <div class="warning">
+                <strong>This is not about hating any group of people.</strong> Many sincere, loving Christians are in various churches and don't yet understand these prophecies. God is calling all honest hearts to study His Word and follow truth wherever it leads.
+            </div>
+        </div>
+
+        <footer>
+            <h2>Study for Yourself</h2>
+            <p style="margin: 20px 0;">
+                Don't take anyone's word for it - including this website. Search the Scriptures daily to see if these things are true (Acts 17:11).
+            </p>
+            <a href="#" class="btn">Download Study Guide</a>
+            <a href="#" class="btn">More Resources</a>
+            
+            <p style="margin-top: 30px; color: #7f8c8d; font-size: 0.9em;">
+                "Sanctify them by Your truth. Your word is truth." - John 17:17
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        function switchLanguage(lang) {
+            // Hide all content
+            const allContent = document.querySelectorAll('.lang-content');
+            allContent.forEach(content => content.classList.remove('active'));
+            
+            // Show selected language
+            const selectedContent = document.querySelectorAll('.lang-' + lang);
+            selectedContent.forEach(content => content.classList.add('active'));
+            
+            // Update button states
+            document.getElementById('btn-en').classList.remove('active');
+            document.getElementById('btn-bisaya').classList.remove('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+        
+        // Set default language to English
+        window.onload = function() {
+            switchLanguage('en');
+        };
+    </script>
+</body>
+</html>
